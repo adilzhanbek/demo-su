@@ -28,7 +28,6 @@ jobs:
       with:
         context: ./
         file: ./Dockerfile
-        builder: ${{ steps.buildx.outputs.name }}
         push: true
         tags:  |
           public.ecr.aws/d0x5p7o5/frontend:${{ github.run_number }}
