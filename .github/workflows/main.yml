@@ -31,6 +31,7 @@ jobs:
         push: true
         tags:  |
           public.ecr.aws/d0x5p7o5/frontend:${{ github.run_number }}
+          public.ecr.aws/d0x5p7o5/frontend:latest
 
     - name: Image digest
       run: echo ${{ steps.docker_build.outputs.digest }}
