@@ -1,0 +1,223 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+.registration-page-container, .registration-modal-page-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/*------------------------------------------------------------*/
+
+.registration-page-container {
+    /*background: linear-gradient(to right, hsl(235, 21%, 53%), hsl(0, 65%, 82%));*/
+    background: linear-gradient(to right, hsl(235, 21%, 53%), hsl(344, 58%, 79%));
+}
+
+.login-page-container {
+    padding: 14rem 0 9rem 0;
+}
+
+.sign-up-page-container {
+    padding: 9rem 0 4rem 0;
+}
+
+/*------------------------------------------------------------*/
+
+.registration-modal-page-container {
+    width: 70vh;
+
+    border-radius: 15px;
+    background-color: var(--welcome-page-background-color);
+    box-shadow: 0 0 0.5rem hsla(0, 0%, 0%, 0.6);
+}
+
+.login-modal-page-container {
+    height: 56vh;
+}
+
+.sign-up-modal-page-container {
+    height: 76vh;
+}
+
+/*------------------------------------------------------------*/
+
+.registration-choice-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/*------------------------------------------------------------*/
+
+.registration-choice {
+    display: flex;
+
+    margin: 0;
+
+    font-family: "Montserrat", sans-serif;
+    color: hsl(1, 60%, 40%);
+    text-decoration: none;
+
+    cursor: pointer;
+
+    transition: transform .2s;
+}
+
+/*------------------------------------------------------------*/
+
+.registration-choice:first-of-type {
+    position: relative;
+
+    font-weight: 600;
+    font-size: 2rem;
+    color: hsl(1, 60%, 40%);
+}
+
+.login-page-registration-choice:first-of-type {
+    padding-right: 0.4rem;
+}
+
+.sign-up-page-registration-choice:first-of-type {
+    padding-right: 0.5rem;
+}
+
+/*------------------------------------------------------------*/
+
+.registration-choice:first-of-type:hover {
+    transform: scale(1.1);
+}
+
+/*------------------------------------------------------------*/
+
+.registration-choice:last-of-type {
+    padding-top: 0.5rem;
+
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: hsl(55, 13%, 66%);
+}
+
+.login-page-registration-choice:last-of-type {
+    padding-left: 0.8rem;
+}
+
+.sign-up-page-registration-choice:last-of-type {
+    padding-left: 0.5rem;
+}
+
+/*------------------------------------------------------------*/
+
+.registration-choice:last-of-type:hover {
+    transform: scale(1.2);
+}
+
+/*------------------------------------------------------------*/
+
+.registration-form {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+/*------------------------------------------------------------*/
+
+.input-group {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    /*align-items: center;*/
+}
+
+/*------------------------------------------------------------*/
+
+.input-group:last-of-type {
+    padding-bottom: 1.5rem;
+}
+
+/*------------------------------------------------------------*/
+
+.registration-input-text {
+    display: flex;
+
+    padding: 0.6rem 0 0.3rem 0.5rem;
+
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    color: hsl(1, 60%, 40%);
+}
+
+/*------------------------------------------------------------*/
+
+#user-name {
+    padding-top: 1.8rem;
+}
+
+/*------------------------------------------------------------*/
+
+.form-control {
+    padding-left: 1rem;
+
+    height: 40px;
+
+    border: 0.08rem solid hsl(1, 60%, 40%);
+    border-radius: 10px;
+    background-color: hsl(0, 0%, 100%);
+
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.login-form-control {
+    width: 420px;
+}
+
+.sign-up-form-control {
+    width: 360px;
+}
+
+/*------------------------------------------------------------*/
+
+.form-control:focus {
+    outline: solid transparent;
+}
+
+/*------------------------------------------------------------*/
+
+.registration-button {
+    padding: 0.6rem 0;
+
+    width: 320px;
+
+    border: 0 solid transparent;
+    border-radius: 10px;
+    background-color: hsl(1, 60%, 40%);
+
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: white;
+
+    cursor: pointer;
+}
+
+.login-button {
+    width: 420px;
+}
+
+.sign-in-button {
+    width: 360px;
+}
+
+/*------------------------------------------------------------*/
+
+.registration-button:hover {
+    background-color: hsl(1, 80%, 45%);
+}
+
+/*------------------------------------------------------------*/
